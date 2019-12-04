@@ -18,11 +18,11 @@ function check(number, filter) {
       {}
     );
 
-  const matchingValues = Object.keys(freqs)
+  const matchingFreq = Object.keys(freqs)
     .map(key => freqs[key])
     .filter(filter);
 
-  return matchingValues.length !== 0;
+  return matchingFreq.length !== 0;
 }
 
 let count = 0;
